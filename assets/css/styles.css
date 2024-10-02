@@ -232,9 +232,33 @@ img{
   transition: .4s;
   visibility: hidden;
 }
+.home_img {
+  animation: rotate 18s linear infinite; /* Adjust the duration for speed */
+}
 
-.scrolltop:hover{
-  background-color: var(--first-color-alt);
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.button {
+  animation: jiggle 2s ease-in-out infinite; /* Adjust the duration for speed */
+}
+
+.button {
+  animation: zoom 2s ease-in-out infinite; /* Adjust duration for speed */
+}
+
+@keyframes zoom {
+  0%, 100% {
+      transform: scale(1); /* Original size */
+  }
+  50% {
+      transform: scale(1.1); /* Slightly larger */
+  }
 }
 
 .scrolltop__icon{
